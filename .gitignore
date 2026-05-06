@@ -1,0 +1,51 @@
+# --- Next.js / Node.js (Frontend) ---
+node_modules/
+.next/
+out/
+build/
+dist/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vercel
+
+# --- Python / FastAPI (Backend) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.python-version
+db.sqlite3
+*.db
+.env
+.env.local
+backend/app/.env
+
+# --- Database & Storage ---
+*.sqlite
+*.log
+
+# --- OS generated files (System) ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# --- IDE (Editors) ---
+.vscode/
+.idea/
+*.swp
+*.swo
