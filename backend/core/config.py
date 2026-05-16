@@ -14,6 +14,6 @@ class Settings(BaseSettings):
     static_dir: str = "static"
     image_dir: str = "static/images"
 
-    model_config = SettingsConfigDict(env_file=".env")
+    model_config = SettingsConfigDict(env_file="../.env", extra="ignore")
 
 settings = Settings()

@@ -81,7 +81,7 @@ async def get_psychological_analysis(user_messages_in: UserMessageCreate) -> str
                 "X-Title": "PsychologyApp",             
             },
             json={
-                "model": "tencent/hy3-preview:free", 
+                "model": "nvidia/nemotron-3-super-120b-a12b:free", 
                 "messages": [
                     {"role": "system", "content": SYSTEM_INSTRUCTION},
                     {"role": "user", "content": prompt},
@@ -97,21 +97,5 @@ async def get_psychological_analysis(user_messages_in: UserMessageCreate) -> str
 
     data = response.json()
     return data["choices"][0]["message"]["content"]
-
-# {
-#   "user_id": "6ca5acfa-1127-42e9-a840-ff080473c077",
-#   "answers": {
-#     "question_1": "это тест моего кода",
-#     "question_2": "это тест моего кода",
-#     "question_3": "это тест моего кода",
-#     "question_4": "это тест моего кода",
-#     "question_5": "это тест моего кода",
-#     "question_6": "это тест моего кода",
-#     "question_7": "это тест моего кода",
-#     "question_8": "это тест моего кода",
-#     "question_9": "это тест моего кода",
-#     "question_10": "это тест моего кода"
-#   }
-# }
 
 
